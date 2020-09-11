@@ -1,0 +1,29 @@
+<html>
+  <body>
+	<h1>Student Enrollment REST API Demo</h1>
+	
+	<br>
+    <form method="POST" action="/">
+      <input type="submit" value="Add"> Click the Add button to add a new record {“id”:223445,“firstName”: “Mike”,“lastName”: “Wong”,“class”:”3 A”,“nationality”: “Singapore”}
+    </form>
+
+    <form method="POST" action="./update">
+      <input type="submit" value="Update"> Click the Update button to update record {“id”:223445, “class”:”3 C”}
+    </form>
+	
+    <form method="POST" action="./delete">
+      <input type="submit" value="Delete"> Click Delete button to delete record id 223445
+    </form>
+
+	<br>
+	<p>The following links will return a json data and will be opened by your default json file viewer.</p>
+	<p>Display records of class '3 A':
+	<a href="http://127.0.0.1:5000/fetchStudents?class=3 A">http://127.0.0.1:5000/fetchStudents?class=3 A</a></p>
+	<p>Fetch student record 223444 : <a href="http://127.0.0.1:5000/fetchStudents?id=223444">http://127.0.0.1:5000/fetchStudents?id=223444</a></p>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer>
+	<p><b>REST API written in Python and Flask framework.</b><br>
+	</footer>
+  </body>
+</html>
